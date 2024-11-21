@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(185, 183, 183);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    width: 500px;
+    text-align: center
+}
+
+ul {
+    display: flex;
+    gap: 150px;
+}
