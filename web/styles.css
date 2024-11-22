@@ -1,18 +1,16 @@
 body {
-    background-color: rgb(185, 183, 183);
+    background-image: url("wallpaper9.png");
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
-h1 {
-    width: 500px;
-    text-align: center
-}
-
-ul {
-    display: flex;
-    gap: 150px;
+#home {
+    text-align: center;
+    background-color: #afd4f7;
+    color: #002649;
+    font-size: 50px;
+    padding: 100px;
+    border-radius: 10px;
+    margin: 350px auto 10px;
+    width: 50%;
+    height: 50%;
+    opacity: 0.3;
 }
