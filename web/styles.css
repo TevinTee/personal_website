@@ -80,12 +80,18 @@ a {
 
 /* about page styling */
 .aboutpage {
-    background-color: rgb(12, 12, 26);
-    color: rgb(171, 171, 182);
+    color: rgb(211, 211, 221);
     width: 100%;
     height: 100%;
     display: block;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0a0a0a; /* Dark background for contrast */
+    color: #ffffff; /* Text color */
+    text-align: center;
+    overflow-y: auto;
 }
 
 .about_logo {
@@ -101,18 +107,110 @@ a {
 }
 
 hr {
-    margin-left: 100px;
+    margin-left: 500px;
     margin-right: 50px;
     border: none;
     border-top: 2px solid #6e6c6c;
-    width: 80%;
+    width: 50%;
 }
 
 .about_content {
     margin-left: 50px;
-    display: inline-block;
-    margin-top: 20px;
-    border: 1px solid;
-    height: 700px;
-    width: 70%;
+    font-size: 22px;
+    margin-left: 700px;
+    margin-top: 50px;
+    height: 900px;
+    width: 30%;
+    font-family: Arial, sans-serif;
+    
 }
+
+.about_links {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    gap: 50px;
+    color: #999595;
+}
+.home_links {
+    color: rgb(171, 171, 182);
+}
+
+.profile_info {
+    width: 350px;
+    height: 350px;
+    display: block;
+    position: absolute;
+    margin-left: 10px;
+}
+
+.info {
+    width: 350px;
+    height: 300px;
+    margin-top: 30px;
+}
+
+.profile_pic {
+    border: 2px solid;
+    border-radius: 50%;
+}
+
+.info {
+            display: flex;
+            justify-content: space-evenly; /* Evenly space the elements horizontally */
+            align-items: center; /* Align items vertically in the center */
+            flex-wrap: wrap; /* Wrap items if the container is too narrow */
+            gap: 10px; /* Space between wrapped rows */
+            padding: 10px;
+
+            border-radius: 5px;
+        }
+
+        .info p {
+            margin: 0;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            flex: 1; /* Ensure flexible resizing */
+            min-width: 150px; /* Prevent elements from shrinking too much */
+        }
+
+.info p span {
+    font-weight: bold;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(134, 131, 131, 0.137),
+        rgba(255, 255, 255, 0.1) 1px,
+        transparent 1px,
+        transparent 50px
+    ),
+    repeating-linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1) 1px,
+        transparent 1px,
+        transparent 50px
+    );
+    animation: moveGrid 10s linear infinite;
+}
+
+/* Animation for grid movement */
+@keyframes moveGrid {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 50px 50px;
+    }
+}
+
+
